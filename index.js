@@ -26,6 +26,7 @@ app.get("/",async(req,res)=>{
     res.render("index.ejs");
 })
 app.get("/home",(req,res)=>{
+
     res.render("index.ejs");
 });
 
