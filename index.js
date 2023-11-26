@@ -56,7 +56,7 @@ app.get("/register",(req,res)=>{
 });
 
 app.get("/aeroX", (req, res) => {
-    res.sendFile(path.join(__dirname, 'events_vayu', 'aerox.html'));
+    res.sendFile(path.join(__dirname, 'events_vayu', 'aeroX.html'));
   });
   app.get("/rotorCraft", (req, res) => {
     res.sendFile(path.join(__dirname, 'events_vayu', 'rotorCraft.html'));
