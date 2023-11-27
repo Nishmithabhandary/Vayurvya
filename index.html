@@ -792,10 +792,15 @@
   
   width: 400px;
   
-  margin-left: 17% !important;
+  margin-left: 50% !important;
+
 }
 .about-me-flex-container .text .firstline{
-  margin-top: -35% !important;
+  /* margin-top: -35% !important; */
+  text-align: right; /* Align text both right and left */
+            max-width: 800px; /* Set a maximum width for better readability */
+            margin: 0 auto; /* Center the content horizontally */
+            padding: 0 20px; /* Add some padding for better spacing */
 }
 
 .about-me-flex-container .text .secondline{
@@ -804,7 +809,11 @@
 
 }
 
-
+@media screen and (max-width: 600px) {
+            .text {
+                max-width: 100%; /* Allow the text to take the full width on smaller screens */
+            }
+        }
 @media only screen and (max-width: 391px) {
 
   .container-10022 {
@@ -1265,9 +1274,8 @@ display: none;
                         <div class="text" >
                          <div class="firstline"> Welcome to Vayurvya, a celebration of a decade of excellence by Aero Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level competition featuring thrilling RC modeling contests, enlightening talks, engaging paper presentations, and a host of other exciting events. Join us as we soar to new heights and embrace the spirit of innovation in the world of aeronautics. Let's make Vayurvya a testament to our passion for aviation and the remarkable journey of Aero Club Nitte. </div>
               
-                          <br><br>
-              
                          
+                         <!-- <div class="secondline"> Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. </div>  -->
                         </div>
                       </div>
                     </div>
@@ -1283,10 +1291,7 @@ display: none;
               
               
               <br><br>
-              <div class = "portfolio-link" style="margin-top: -8%;">
-                <a href="https://www.aeroclubnitte.in/team" target="_blank"> Our Team </a>
-                <a href="https://www.aeroclubnitte.in/contact" target="_blank"> Contact Us </a>
-              </div> 
+              
 
 
             
@@ -1377,26 +1382,26 @@ display: none;
 
                   <div class="container-11" style="margin-right:-19%; margin-left: -15%;">
                     <div class="card-11">
-                      <a href="/aeroX"><img src="./assets/img/AeroX_banner.jpg"></a>
-                      <div class="card__head-11">AeroX</div>
+                      <a href="./vichaar"><img src="./assets/img/AeroX_banner.jpg"></a>
+                      <div class="card__head-11">Event 1</div>
                     </div>
                     <div class="card-11">
-                      <a href="/rotorCraft"><img src="./assets/img/RotorCraft_banner.jpg"></a>
-                      <div class="card__head-11">RotorCraft</div>
+                      <a href="./vichaar"><img src="./assets/img/RotorCraft_banner.jpg"></a>
+                      <div class="card__head-11">Event 2</div>
                     </div>
                     <div class="card-11">
                       <a href="./skyProbe"><img src="./assets/img/SkyProbe_banner.jpg"></a>
-                      <div class="card__head-11">SkyProbe</div>
+                      <div class="card__head-11">Event 3</div>
                     </div>
                     <div class="card-11">
                       <a href="./vichaar">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg"></a>
-                      <div class="card__head-11">Vichaar</div>
+                      <div class="card__head-11">Event 4</div>
                     </div>
                     <div class="card-11">
                       <a href="/words_with_wings"> <img src="./assets/img/wwwings.jpg"></a>
-                      <div class="card__head-11">Words With Wings</div>
+                      <div class="card__head-11">Event 5</div>
                     </div>
                   </div>
 
