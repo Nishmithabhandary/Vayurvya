@@ -1452,49 +1452,45 @@ display: none;
     imagesLoaded(document.querySelectorAll('.intro__img, .reel__img'), { background: true }, () => document.body.classList.remove('loading'));
   </script>
 
+  
+   
   <script>
-    const year = new Date().getFullYear();
-const fourthOfJuly = new Date(2023, 11,25).getTime();
-const fourthOfJulyNextYear = new Date(2023 + 1, 1, 26).getTime();
-const month = new Date().getMonth();
+  // Target date (26th January of the next year)
+  const targetDate = new Date(new Date().getFullYear() + 1, 0, 26).getTime();
 
-// countdown
-let timer = setInterval(function() {
+  // Update the countdown every second
+  let timer = setInterval(function() {
+    // Get today's date and time
+    const now = new Date().getTime();
 
-  // get today's date
-  const today = new Date().getTime();
+    // Calculate the remaining time
+    const remainingTime = targetDate - now;
 
-  // get the difference
-  let diff;
-  if(month > 6) {
-    diff = fourthOfJulyNextYear - today;
-  } else {
-    diff = fourthOfJuly - today;
-  }
+    if (remainingTime > 0) {
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("timer").innerHTML =
+        "<div class=\"days\"> \
+        <div class=\"numbers\">" + days + "</div>days</div> \
+        <div class=\"hours\"> \
+        <div class=\"numbers\">" + hours + "</div>hours</div> \
+        <div class=\"minutes\"> \
+        <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+        <div class=\"seconds\"> \
+        <div class=\"numbers\">" + seconds + "</div>seconds</div>";
+    } else {
+      clearInterval(timer);
+      document.getElementById("timer").innerHTML = "Countdown is over!";
+    }
+  }, 1000);
+</script>
 
 
-
-
-  // math
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-  // display
-  document.getElementById("timer").innerHTML =
-    "<div class=\"days\"> \
-  <div class=\"numbers\">" + days + "</div>days</div> \
-<div class=\"hours\"> \
-  <div class=\"numbers\">" + hours + "</div>hours</div> \
-<div class=\"minutes\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
-<div class=\"seconds\"> \
-  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
-</div>";
-
-}, 1000);
-  </script>
 
 </body>
 
