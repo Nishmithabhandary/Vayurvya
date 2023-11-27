@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -64,11 +65,6 @@
 
     @media screen and (max-width: 600px) {
       
-
-
-
-
-
       table {
         border: 0;
       }
@@ -731,7 +727,7 @@
   }
 }
 .about-me-flex-container .about-me-content .logo {
-  max-width: 200px;
+  max-width: 400px;
 }
 .about-me-flex-container .about-me-content .logo img {
   filter: drop-shadow(0 0 25px rgb(0, 0, 0));
@@ -739,16 +735,35 @@
 @media (max-width: 500px) {
   .about-me-flex-container .about-me-content .logo img {
     transform: rotateZ(90deg);
+    display: none;
   }
+  .intro a {
+    margin-bottom: -17%;
+    font-size: 12px;
+    margin-left: -19%;
+  }
+
+ 
+
+  .header .button-10a a{
+    display: none;
+
+  }
+
 }
 .about-me-flex-container .about-me-content .text {
   color: #87A4B6;
   font-weight: 600;
+  margin-top: 5%;
   font-size: 18px;
 }
 @media (max-width: 500px) {
   .about-me-flex-container .about-me-content .text {
     font-size: 16px;
+  }
+
+  .about-me-flex-container .about-me-image{
+    margin-top:7% ;
   }
   
   .container-10022 #timer {
@@ -760,8 +775,28 @@
   margin-left: -11%;
   height: 400px;
 }
-.about-me-title{
-  margin-top: 10%;
+
+
+.about-me-container{
+  justify-content: space-between;
+  margin-top: 18%;
+}
+
+.about-me-container .about-me-title{
+  margin-top: -22%;
+}
+
+.about-me-container {
+  margin-top: 15%;
+}
+
+
+.intro .container-10022 {
+
+ margin-top: -48%;
+}
+.intro h2{
+  margin-top: 47%;
 }
 }
 
@@ -826,8 +861,8 @@
   position: relative;
   overflow: hidden;
   width: 600px;
-  margin-top: -10%;
-  margin-bottom: -35%;
+  margin-bottom: -16%;
+  margin-top: -18%;
   margin-left: -12%;
   height: 400px;
 }
@@ -988,7 +1023,7 @@ display: none;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
-
+ 
     
   </style>
 </head>
@@ -1012,10 +1047,19 @@ display: none;
           <header class="header">
             <a class="header--logo" href="#0">
               <img src="./assets/img/aclogo-removebg-preview.png" style="height: 50px;" alt="Aero_logo">
-              <p>AEROCLUB NITTE</p>
+              <p>AEROCLUB NITTE</p> 
             </a>
 
-            <div class="header--nav-toggle">
+            <div class="button-10a" style="margin-top: 1%; margin-left: 31%;  width: 100%; ">
+              <a href="#eventsList">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                REGISTER NOW </a>
+            </div>
+            
+            <div class="header--nav-toggle" >
               <span></span>
             </div>
           </header>
@@ -1031,16 +1075,20 @@ display: none;
           <ul class="l-main-content main-content">
             <li class="l-section section section--is-active">
               <div class="intro" style="margin-top:-3% ;">
-                <img src="./assets/img/Vayurvya_Logo.png" style="height: 250px; width: 470px; margin-top: 20%;"
+                
+                <img src="./assets/img/Vayurvya_Logo.png" style="height: 250px; width: 470px; margin-top: 20%;" class="vayu_logo"
                   alt="Vayurvya_logo">
 
 
                 <div class="intro--banner">
-                  <h1 style="margin-top: -3%;"><span style="font-size:30px;">A Decade Of Legacy</span>
+                  <h1 style="margin-top: -3%;" class="tagline"><span style="font-size:30px;">A Decade Of Legacy</span>
                   </h1>
-
+                  <img src="assets/img/3-removebg-preview.png" class="naut" style="height: 460px;" alt="Welcome">
+                  
+                  <h2 style="margin-left: 0%;">The event starts in</h2>
                   <!-- countdownClock -->
-                  <div class="container-10022">
+                  <div class="container-10022" >
+                    
                     <div class="balloon white">
                       <div class="star-red"></div>
                     <div class="face">
@@ -1072,15 +1120,10 @@ display: none;
                   </div>
                     <div id="timer"></div>
                   </div>
-                                
-
-                  <img src="assets/img/3-removebg-preview.png" style="height: 500px;" alt="Welcome">
-
-                  
                   
                 </div>
  
-                <div class="button-10a" style="margin-top: 1%; margin-left: -2%;  width: 100%; ">
+                <div class="button-10a" style="margin-top: 1%; margin-left: 22%;  width: 100%; ">
                   <a href="#eventsList">
                     <span></span>
                     <span></span>
@@ -1111,21 +1154,21 @@ display: none;
               <section class="about-me" id="about-me " style="width: 80%; margin-left: 10%;">
                 <div class=".container-1111 ">
                   <div class="about-me-container">
-                    <div class="about-me-title">
+                    <div class="about-me-title" style="font-family: 'Kanit', sans-serif; margin-top: 0%;">
                       About  Vayurvya
                     </div>
               
-                    <div class="about-me-flex-container" style="margin-top: 5%;">
+                    <div class="about-me-flex-container" style="margin-top: 2%;">
                       <div class="about-me-image">
                         <div class="back-div"></div>
                         <div class="black-image"><img src="/assets/img/latestpics001.png" alt="black"></div>
                         <div class="main-image"><img src="/assets/img/latestpics001.png" style="height: 300px;" alt="smit"></div>
                       </div>
-                      <div class="about-me-content">
+                      <div class="about-me-content" style="margin-top: -13%;">
               
-                        <div class="logo"><img src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/logo.svg" alt="smit"></div>
+                        <div class="logo"><img src="/assets/img/ac_logo-removebg-preview1.png" alt="smit"></div>
               
-                        <div class="text">
+                        <div class="text" >
                           An ambitious Front-end Developer and designer who takes great pride in the presentation and quality of work. 
               
                           <br><br>
@@ -1164,37 +1207,43 @@ display: none;
             <!-- ResourcePersons -->
             <li class="l-section section">
               <div class="work">
-                <h2 id="events">Resource Persons</h2>
+                <h2 id="events" style="font-family: 'Kanit', sans-serif;">Resource Persons</h2>
                 <div class="work--lockup">
                   <ul class="slider">
                     <li class="slider--item slider--item-left">
                       <a href="#0">
                         <div class="slider--item-image">
-                          <img src="./assets/img/rithesh.jpg" alt="Victory">
+                          <img src="./assets/img/coming-soon-see-it-soon.gif" alt="Victory">
                         </div>
-                        <p class="slider--item-title">Rithesh leader</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                          do.</p>
+                        <p class="slider--item-title">Coming soon</p>
+                        <p class="slider--item-description">
+
+
+
+                        </p>
                       </a>
                     </li>
                     <li class="slider--item slider--item-center">
                       <a href="#0">
                         <div class="slider--item-image">
-                          <img src="./assets/img/amankumar.jpg" alt="Metiew and Smith">
+                          <img src="./assets/img/coming-soon-see-it-soon.gif" alt="Metiew and Smith">
                         </div>
-                        <p class="slider--item-title">Aman &amp; Kumar</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                          do.</p>
+                        <p class="slider--item-title">Coming Soon</p>
+                        <p class="slider--item-description">
+
+                        </p>
                       </a>
                     </li>
                     <li class="slider--item slider--item-right">
                       <a href="#0">
                         <div class="slider--item-image">
-                          <img src="./assets/img/Sriram.jpg" alt="Alex Nowak">
+                          <img src="./assets/img/coming-soon-see-it-soon.gif" alt="Alex Nowak">
                         </div>
-                        <p class="slider--item-title">Who are you</p>
-                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                          do.</p>
+                        <p class="slider--item-title">Coming soon</p>
+                        <p class="slider--item-description">
+
+
+                        </p>
                       </a>
                     </li>
                   </ul>
@@ -1265,12 +1314,7 @@ display: none;
 
                   <!-- <img src="/assets/img/391048893-orig-unscreen.gif" style="margin-right: -50%; margin-top: 40%; height: 250px;" alt=""> -->
 
-
                 </div>
-
-
-
-
 
               </div>
 
@@ -1449,13 +1493,11 @@ display: none;
 
   <script>
     // Preload all the images in the page
-    imagesLoaded(document.querySelectorAll('.intro__img, .reel__img'), { background: true }, () => document.body.classList.remove('loading'));
+    imagesLoaded(document.querySelectorAll('.intro_img, .reel_img'), { background: true }, () => document.body.classList.remove('loading'));
   </script>
 
-  
-   
-  <script>
-  // Target date (26th January of the next year)
+<script>
+  // Target date (26th January 2024)
   const targetDate = new Date(new Date().getFullYear() + 1, 0, 26).getTime();
 
   // Update the countdown every second
@@ -1489,8 +1531,6 @@ display: none;
     }
   }, 1000);
 </script>
-
-
 
 </body>
 
