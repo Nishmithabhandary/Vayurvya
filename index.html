@@ -347,7 +347,7 @@
       font-size: 20px;
       overflow: hidden;
       transition: 0.2s;
-        margin-top: 48%;
+    
     }
 
     .button-10a a:visited {
@@ -825,11 +825,11 @@
       }
 
       .intro h2 {
-        display: block;
+        display: none;
       }
 
       .container-10022 #timer {
-        margin-top: 40% !important;
+        margin-top: 48% !important;
         margin-left: -12.75% !important;
       
 
@@ -1240,6 +1240,16 @@
       -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     }
+    #readMoreBtn {
+  background-color: blue;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
   </style>
 </head>
 
@@ -1386,18 +1396,16 @@
                         <div class="logo" style="margin-bottom: -8%;"><img
                             src="/assets/img/ac_logo-removebg-preview1.png" alt="smit"></div>
 
-                        <div class="text">
-                          <div class="firstline"> Welcome to Vayurvya, a celebration of a decade of excellence by Aero
-                            Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level
-                            competition featuring thrilling RC modeling contests, enlightening talks, engaging paper
-                            presentations, and a host of other exciting events.</div>
+                            <div class="text">
+                              <div class="firstline">
+                                Welcome to Vayurvya, a celebration of a decade of excellence by Aero Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level competition featuring thrilling RC modeling contests, enlightening talks, engaging paper presentations, and a host of other exciting events.
+                              </div>
+                              <div class="secondline" style="display: none;">
+                                Let's make Vayurvya a testament to our passion for aviation and the remarkable journey of Aero Club Nitte.
+                              </div>
+                              <button id="readMoreBtn" onclick="toggleSecondLine()">Read More</button>
+                            </div>
                             
-                            <div class="secondline"> Let's make Vayurvya a
-                            testament to our passion for aviation and the remarkable journey of Aero Club Nitte. </div>
-
-
-                          <!-- <div class="secondline"> Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. </div>  -->
-                        </div>
                       </div>
                     </div>
 
@@ -1703,6 +1711,18 @@
   <script src="js/charming.min.js"></script>
   <script src="js/TweenMax.min.js"></script>
   <script src="js/demo5.js"></script>
+  <script>
+  function toggleSecondLine() {
+  var secondLine = document.querySelector('.secondline');
+  var readMoreBtn = document.getElementById('readMoreBtn');
+
+  if (secondLine.style.display === 'none') {
+    secondLine.style.display = 'block';
+    readMoreBtn.style.display = 'none';
+  }
+}
+</script>
+  
   <script>
 
     $(".button-group > div").click(function () {
