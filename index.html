@@ -817,25 +817,36 @@
     @media only screen and (max-width:376px) {
       .intro a {
         margin-left: -28.5% !important;
-        width: 320px !important;
+        width: 330px !important;
         margin-bottom: 8% !important;
         font-size: 13px;
 
       }
 
+
+
+      .days,
+    .hours,
+    .minutes,
+    .seconds {
+      display: inline-block;
+      padding: 8px;
+      width: 35px !important;
+      border-radius: 5px;
+    }
+
       .intro h2 {
-        display: block;
+        display: none;
       }
 
       .container-10022 #timer {
         margin-top: 48% !important;
-        margin-left: -12.75% !important;
+        margin-left: -13% !important;
       
-
       }
 
       .about-me-title {
-        font-size: 2px;
+        font-size: 30px !important; 
         margin-left: -2%;
         margin-top: -5% !important;
       }
@@ -843,9 +854,39 @@
       .about-me-flex-container {
         height: 800px;
         width: 400px;
-        margin-left: -40%;
+        margin-left: -42%;
         margin-top: -90% !important;
 
+      }
+ 
+      .container-11 .card-11 {
+      flex: 1;
+      transition: all 1s ease-in-out;
+      height: 80vmin;
+      position: relative;
+    }
+
+
+
+      .container-10022 h1 {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      margin-top: 2em;
+      font-size: 0.25em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-left: -1%;
+      color: #F6F4F3;
+    }
+
+    table td, tr{
+
+      font-size: 8px;
+      justify-content: space-evenly;
+    
+    }
+      #myBtn{
+        display: none;
       }
 
       .about-me-flex-container .about-me-image {
@@ -864,13 +905,13 @@
 
       .about-me-flex-container .text .firstline {
         margin-top: -18% !important;
+        font-size: 15px;
 
       }
 
       .about-me-flex-container .text .secondline {
         display: none;
       }
-      
     }
 
     @media screen and (max-width: 600px) {
