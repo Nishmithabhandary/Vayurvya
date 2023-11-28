@@ -1239,6 +1239,7 @@
       -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     }
+    #more {display: none;}
   </style>
 </head>
 
@@ -1385,18 +1386,17 @@
                         <div class="logo" style="margin-bottom: -8%;"><img
                             src="/assets/img/ac_logo-removebg-preview1.png" alt="smit"></div>
 
-                        <div class="text">
+                       <div class="text">
                           <div class="firstline"> Welcome to Vayurvya, a celebration of a decade of excellence by Aero
                             Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level
                             competition featuring thrilling RC modeling contests, enlightening talks, engaging paper
-                            presentations, and a host of other exciting events.</div>
+                            presentations, and a host of other exciting events.<span id="dots">...</span></div>
+                             
+
+                            <span id="more"> <div class="secondline"> Let's make Vayurvya a
+                            testament to our passion for aviation and the remarkable journey of Aero Club Nitte. </div></span>
                             
-                            <div class="secondline"> Let's make Vayurvya a
-                            testament to our passion for aviation and the remarkable journey of Aero Club Nitte. </div>
-
-
-                          <!-- <div class="secondline"> Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. </div>  -->
-                        </div>
+                            <button onclick="myFunction()" id="myBtn" style="background-color: transparent; border: 0px;">Read more</button>
                       </div>
                     </div>
 
@@ -1752,6 +1752,23 @@
       }
     }, 1000);
   </script>
+   <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
 
 </body>
 
