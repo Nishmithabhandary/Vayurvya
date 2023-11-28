@@ -32,13 +32,14 @@
     /* ContactUs_table */
 
 
-    .container_form_sub{
-      margin-left:-5%;
+    .container_form_sub {
+      margin-left: -5%;
+
     }
+
     table {
       border: 1px solid #ccc;
       border-collapse: collapse;
-      
       padding: 0;
       width: 100%;
       table-layout: fixed;
@@ -69,7 +70,7 @@
     }
 
     @media screen and (max-width: 600px) {
-      
+
       table {
         border: 0;
       }
@@ -106,7 +107,7 @@
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
     */
-        float:none;
+        float: none;
         font-weight: bold;
         text-transform: uppercase;
       }
@@ -114,23 +115,25 @@
       table td:last-child {
         border-bottom: 0;
       }
-       #address_ {
-      margin-top:5%;
-    }
+
+      #address_ {
+        margin-top: 5%;
+      }
     }
 
     /* making it responsive */
     @media only screen and (max-width: 468px) {
-      .floating_astro{
-  display: none;
-}
+      .floating_astro {
+        display: none;
+      }
 
       /* Styles for screens smaller than 767px */
       body {
         font-size: 12px;
         /* Adjust font size for smaller screens */
       }
-     /* Media query for mobile devices */
+
+      /* Media query for mobile devices */
 
       l-wrapper {
         width: 50%;
@@ -141,22 +144,22 @@
       }
 
 
-      .about img{
-       display: none;
+      .about img {
+        display: none;
       }
 
 
-      .about div{
-      width: 150%;
-      margin-left: -60%;
-      margin-top: 60%;
-    }
+      .about div {
+        width: 150%;
+        margin-left: -60%;
+        margin-top: 60%;
+      }
 
     }
 
 
     @media only screen and (min-width: 768px) and (max-width: 1268px) {
-      
+
 
       /* Styles for screens between 768px and 1023px */
       body {
@@ -195,7 +198,7 @@
 
     /* responiveness ends here */
 
-  
+
 
     /* aboutUs section */
 
@@ -593,532 +596,649 @@
 
 
 
-    .container-1111  {
-    max-width: 150px;
-    padding: 0px 36px;
-  }
+    .container-1111 {
+      max-width: 150px;
+      padding: 0px 36px;
+    }
 
 
-@media (min-width: 1200px) and (max-width: 1441px) {
- .container-1111  {
-    max-width: 1250px;
-    padding: 0px 36px;
-  }
-}
-@media (max-width: 767px) {
-  .container-1111  {
-    padding: 0px 30px;
-  }
-}
-@media (max-width: 479px) {
-  .container-1111 {
-    padding: 0px 30px 0px 20px;
-  }
-}
+    @media (min-width: 1200px) and (max-width: 1441px) {
+      .container-1111 {
+        max-width: 1250px;
+        padding: 0px 36px;
+      }
+    }
 
-.about-me {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.about-me .about-me-container {
-  position: relative;
-}
-@media (max-width: 960px) {
-  .about-me .about-me-container {
-    padding-bottom: 100px;
-  }
-}
-.about-me .about-me-container .about-me-title {
-  font-size: 55px;
-  color: #87A4B6;
-  font-weight: 700;
-}
-@media (max-width: 500px) {
-  .about-me .about-me-container .about-me-title {
-    font-size: 30px;
-  }
-}
+    @media (max-width: 767px) {
+      .container-1111 {
+        padding: 0px 30px;
+      }
+    }
 
-.about-me-flex-container {
-  margin-top: -25px;
-  margin-left: 150px;
-  left: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 960px) {
-  .about-me-flex-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-    gap: 50px;
-  }
-}
-@media (max-width: 500px) {
-  .about-me-flex-container {
-    margin-top: -10px;
-  }
-  .mail-button.mail-button2 {
-  display: none;
- 
-}
+    @media (max-width: 479px) {
+      .container-1111 {
+        padding: 0px 30px 0px 20px;
+      }
+    }
 
-}
-.about-me-flex-container .about-me-image {
-  position: relative;
-  width: 400px;
-  height: 400px;
-}
-@media (max-width: 500px) {
-  .about-me-flex-container .about-me-image {
-    width: 300px;
-    height: 300px;
-  }
-}
-.about-me-flex-container .about-me-image .back-div {
-  position: absolute;
-  bottom: 0;
-  z-index: -3;
-  background-color: #013747;
-  width: 80%;
-  height: 80%;
-}
-.about-me-flex-container .about-me-image .black-image {
-  z-index: -2;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  height: 100%;
-}
-.about-me-flex-container .about-me-image .black-image img {
-  height: 100%;
-}
-.about-me-flex-container .about-me-image .main-image {
-  width: 70%;
-  height: 70%;
-  overflow: hidden;
-  position: absolute;
-  left: 25%;
-  top: 5%;
-  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
-  transition: all 0.2s ease-out;
-}
-.about-me-flex-container .about-me-image .main-image:hover {
-  transform-origin: top center;
-  transform: scale(1.5);
-  border-radius: 25px;
-}
-.about-me-flex-container .about-me-image .main-image img {
-  transform-origin: center center;
-  transform: scale(2);
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.2s ease-out;
-}
-.about-me-flex-container .about-me-image .main-image img:hover {
-  transform: scale(1);
-}
-.about-me-flex-container .about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  flex: 0 0 40%;
-}
-@media (max-width: 960px) {
-  .about-me-flex-container .about-me-content {
-    flex-direction: row-reverse;
-  }
-}
-.about-me-flex-container .about-me-content .logo {
-  max-width: 400px;
-}
-.about-me-flex-container .about-me-content .logo img {
-  filter: drop-shadow(0 0 25px rgb(0, 0, 0));
-}
-@media (max-width: 500px) {
-  .about-me-flex-container .about-me-content .logo img {
-    transform: rotateZ(90deg);
-    display: none;
-  }
-  .intro a {
-    margin-bottom: -17%;
-    font-size: 12px;
-    margin-left: -21%;
-  }
- 
-  .header .button-10a a{
-    display: none;
-  }
+    .about-me {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
-}
-.about-me-flex-container .about-me-content .text {
-  color: #87A4B6;
-  font-weight: 600;
-  margin-top: 5%;
-  font-size: 18px;
-}
+    .about-me .about-me-container {
+      position: relative;
+    }
 
+    @media (max-width: 960px) {
+      .about-me .about-me-container {
+        padding-bottom: 100px;
+      }
+    }
 
-@media only screen and (max-width:376px){
-  .intro a{
-    margin-left: -29% !important;
-    width: 450px;
-    margin-top: -55% !important;
-    font-size: 13px;
+    .about-me .about-me-container .about-me-title {
+      font-size: 55px;
+      color: #87A4B6;
+      font-weight: 700;
+    }
 
-  }
-  .intro h2{
-   display: none;
-  }
-  .container-10022 #timer{
-    margin-top: 35% !important;
-  }
+    @media (max-width: 500px) {
+      .about-me .about-me-container .about-me-title {
+        font-size: 30px;
+      }
+    }
 
-  .about-me-title{
-  font-size:2px;
-  margin-left: -2%;
-  margin-top: -5% !important;
-}
+    .about-me-flex-container {
+      margin-top: -25px;
+      margin-left: 150px;
+      left: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-.about-me-flex-container{
-  height: 800px;
-  width: 400px;
-  margin-left: -40%;
-  margin-top: -80% !important;
-}
-.about-me-flex-container .text{
-  
-  width: 400px;
-  
-  margin-left: 17% !important;
-}
-.about-me-flex-container .text .firstline{
-  margin-top: -35% !important;
-}
+    @media (max-width: 960px) {
+      .about-me-flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        gap: 50px;
+      }
+    }
 
-.about-me-flex-container .text .secondline{
-  display: none;
-}
+    @media (max-width: 500px) {
+      .about-me-flex-container {
+        margin-top: -10px;
+      }
 
-}
+      .mail-button.mail-button2 {
+        display: none;
+
+      }
+
+    }
+
+    .about-me-flex-container .about-me-image {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    @media (max-width: 500px) {
+      .about-me-flex-container .about-me-image {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .about-me-flex-container .about-me-image .back-div {
+      position: absolute;
+      bottom: 0;
+      z-index: -3;
+      background-color: #013747;
+      width: 80%;
+      height: 80%;
+    }
+
+    .about-me-flex-container .about-me-image .black-image {
+      z-index: -2;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      height: 100%;
+    }
+
+    .about-me-flex-container .about-me-image .black-image img {
+      height: 100%;
+    }
+
+    .about-me-flex-container .about-me-image .main-image {
+      width: 70%;
+      height: 70%;
+      overflow: hidden;
+      position: absolute;
+      left: 25%;
+      top: 5%;
+      box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+      transition: all 0.2s ease-out;
+    }
+
+    .about-me-flex-container .about-me-image .main-image:hover {
+      transform-origin: top center;
+      transform: scale(1.5);
+      border-radius: 25px;
+    }
+
+    .about-me-flex-container .about-me-image .main-image img {
+      transform-origin: center center;
+      transform: scale(2);
+      -o-object-fit: cover;
+      object-fit: cover;
+      transition: all 0.2s ease-out;
+    }
+
+    .about-me-flex-container .about-me-image .main-image img:hover {
+      transform: scale(1);
+    }
+
+    .about-me-flex-container .about-me-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      flex: 0 0 40%;
+    }
+
+    @media (max-width: 960px) {
+      .about-me-flex-container .about-me-content {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .about-me-flex-container .about-me-content .logo {
+      max-width: 400px;
+    }
+
+    .about-me-flex-container .about-me-content .logo img {
+      filter: drop-shadow(0 0 25px rgb(0, 0, 0));
+    }
+
+    @media (max-width: 500px) {
+      .about-me-flex-container .about-me-content .logo img {
+        transform: rotateZ(90deg);
+        display: none;
+      }
+
+      .intro a {
+       margin-top: 15px;
+        font-size: 12px;
+        margin-left: -21%;
+      }
+
+      .header .button-10a a {
+        display: none;
+      }
 
 
-@media only screen and (max-width: 391px) {
-
-  .container-10022 {
-
-  overflow: hidden;
-  width: 10%;
-  margin-top : 29%;
-  margin-bottom: -35%;
-  margin-left: -19% !important;
-  height: 400px;
-}
-
-.intro h2{
-  margin-left: -1.5%;
-}
- 
-.header .vayu_logo{
-  margin-top: 5%;
-}
+      .about-me-flex-container .text {
+        font-size: 16px !important;
+        width: 400px;
+        margin-left: 15%;
+        margin-top: 5% !important;
+      }
 
 
-.about-me-title{
-  font-size:2px;
-  margin-left: -2%;
+      .intro h2{
+
+        margin-top: 135px !important ;
+      }
+      .container-10022 {
+
+    overflow: hidden;
+    width: 460px !important;
+    margin-top: -120px !important;
+    margin-left: 2% !important;
+    margin-bottom: -50px;
+    height: 400px;
 }
 
-.about-me-flex-container{
-  height: 800px;
-  width: 470px;
-  margin-left: -40%;
-  margin-top: -20% !important;
-}
-.about-me-flex-container .text{
-  font-size:17px !important;
-  width: 400px;
-  margin-left: 20%;
-  margin-top: 10% !important;
-}
-
-}
+    }
 
 
-@media only screen and (max-width: 500px) {
-  .about-me-flex-container .about-me-content .text {
-    font-size: 16px;
-  }
 
-  .about-me-flex-container .about-me-image{
-    margin-top:7% ;
-  }
-  
-  .container-10022 #timer {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin-top : 29%;
-  margin-bottom: -35%;
-  margin-left: -11%;
-  height: 400px;
-}
-
- .days, .hours, .minutes, .seconds {
-  display: inline-block;
-  padding: 16px;
-  width: 35px;
-  border-radius: 5px;
-}
+    .about-me-flex-container .about-me-content .text {
+      color: #87A4B6;
+      font-weight: 600;
+      margin-top: 5%;
+      font-size: 18px;
+    }
 
 
-.about-me-container{
-  justify-content: space-between;
-  margin-top: 18%;
-}
+    @media only screen and (max-width:376px) {
+      .intro a {
+        margin-left: -28.5% !important;
+        width: 320px !important;
+        margin-bottom: 8% !important;
+        font-size: 13px;
 
-.about-me-container .about-me-title{
-  margin-top: -22%;
-}
+      }
 
-.about-me-container {
-  margin-top: 15%;
-}
+      .intro h2 {
+        display: none;
+      }
+
+      .container-10022 #timer {
+        margin-top: 48% !important;
+        margin-left: -12.75% !important;
+      
+
+      }
+
+      .about-me-title {
+        font-size: 2px;
+        margin-left: -2%;
+        margin-top: -5% !important;
+      }
+
+      .about-me-flex-container {
+        height: 800px;
+        width: 400px;
+        margin-left: -40%;
+        margin-top: -90% !important;
+
+      }
+
+      .about-me-flex-container .about-me-image {
+        margin-top: -20% !important;
+        height: 250px;
+        width: 250px;
+      }
+
+      .about-me-flex-container .text {
+        height: 200px !important;
+        width: 400px;
+        margin-top: 30px !important;
 
 
-.intro .container-10022 {
+      }
 
- margin-top: -48%;
-}
-.intro h2{
-  margin-top: 43%;
-}
-}
-.mail-button {
-  display: flex;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  padding: 15px;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-out;
-}
-.mail-button a {
-  display: flex;
-}
-.mail-button img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: all 0.2s ease-out;
-}
+      .about-me-flex-container .text .firstline {
+        margin-top: -18% !important;
 
-.mail-button2 {
-  background-color: #001925;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border: 10px solid #001925;
-}
-.mail-button2 img {
-  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
-}
-.mail-button2:hover {
-  background-color: blue;
-  border: 10px solid blue;
-}
-.mail-button2:hover img {
-  filter: unset;
-  transform: scale(1.5);
-}
+      }
 
-.portfolio-link {
-  
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.portfolio-link a{
-  text-decoration: none;
-  color: white;
+      .about-me-flex-container .text .secondline {
+        display: none;
+      }
+      
+    }
 
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
+    @media screen and (max-width: 600px) {
+      .text {
+        max-width: 100%;
+        /* Allow the text to take the full width on smaller screens */
+      }
+    }
 
-/* countdonwClock */
-.container-10022 {
-  position: relative;
-  overflow: hidden;
-  width: 600px;
-  margin-bottom: -16%;
-  margin-top: -18%;
-  margin-left: -14%;
-  height: 400px;
-}
-.container-10022 h1 {
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  margin-top: 2em;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #F6F4F3;
-}
-#timer {
-  color: #F6F4F3;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.4em;
-  letter-spacing: 5px;
-  margin-top: 25%;
-}
-.days, .hours, .minutes, .seconds {
-  display: inline-block;
-  padding: 20px;
-  width: 45px;
-  border-radius: 5px;
-}
-.days {
-  backdrop-filter: blur(1px); 
-  background-color: rgba(255, 255, 255, 0.385); 
-}
-.hours {
-  backdrop-filter: blur(1px); 
-  background-color: rgba(255, 255, 255, 0.385); 
-}
-.minutes {
-  backdrop-filter: blur(1px); 
-  background-color: rgba(255, 255, 255, 0.385); 
-}
-.seconds {
-  backdrop-filter: blur(1px); 
-  background-color: rgba(255, 255, 255, 0.385); 
-}
-.numbers {
-  font-family: 'Montserrat', sans-serif;
-  color: #183059;
-  font-size: 4em;
-}
-.white {
-  position: absolute;
-  background: #F6F4F3;
-  height: 85px;
-  width: 75px;
-  left: 30%;
-  top: 2%;
-}
-.white .triangle {
-  border-bottom: 14px solid #F6F4F3;
-}
-.white .string {
-  background: #F6F4F3;
-  border: 1px solid #F6F4F3;
-}
-.red {
-  position: absolute;
-  background: #EF2F3C;
-  left: 18%;
-  top: 9%;
-  height: 65px;
-  width: 70px;
-}
-.red .triangle {
-  border-bottom: 14px solid #EF2F3C;
-}
-.red .string {
-  background: #EF2F3C;
-  border: 1px solid #EF2F3C;
-}
-.blue {
-  position: absolute;
-  background: #276FBF;
-  height: 80px;
-  width: 80px;
-  left: 60%;
-  top: 5%;
-}
-.blue .triangle {
-  border-bottom: 14px solid #276FBF;
-}
-.blue .string {
-  background: #276FBF;
-  border: 1px solid #276FBF;
-}
-.balloon {
-display: none;
-}
-.eye {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  top: 40%;
-  left: 22%;
-  background: #000;
-  border-radius: 50%;
-}
-.eye:after {
-  content: '';
-  left: 35px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #000;
-  position: absolute;
-}
-.mouth {
-  position: absolute;
-  top: 45%;
-  left: 43%;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-}
-.happy {
-  border: 2px solid;
-  border-color: transparent #f7f5f5 #000 transparent;
-  transform: rotate(45deg);
-}
-.triangle {
-  position: absolute;
-  left: 40%;
-  bottom: -10%;
-  width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-}
-.string {
-  position: absolute;
-  height: 70px;
-  width: 1px;
-  left: 48%;
-  top: 100%;
-  z-index: -1;
-}
-.star {
-  width: 20px;
-  height: 20px;
-  background: #F6F4F3;
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
-.star-red {
-  width: 30px;
-  height: 30px;
-  margin-left: 51px;
-  margin-top: -5px;
-  background: #EF2F3C;
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
- 
+    @media only screen and (max-width: 391px) {
 
-    
+      .container-10022 {
+
+        overflow: hidden;
+        width: 460px !important;
+        margin-top: -35% !important;
+        margin-left: -1% !important;
+        height: 400px;
+      }
+
+      .intro h2 {
+        margin-left: 0% !important;
+        margin-top: 35% !important;
+      }
+
+      .header .vayu_logo {
+        margin-top: 5%;
+      }
+
+
+      .about-me-title {
+        font-size: 2px;
+        margin-left: -2%;
+      }
+
+      .about-me-flex-container {
+        height: 800px;
+        width: 470px;
+        margin-left: -40%;
+        margin-top: -20% !important;
+      }
+
+      .about-me-flex-container .text {
+        font-size: 17px !important;
+        width: 400px;
+        margin-left: 20%;
+        margin-top: 10% !important;
+      }
+
+    }
+
+
+    @media only screen and (max-width: 500px) {
+      .about-me-flex-container .about-me-content .text {
+        font-size: 16px;
+      }
+
+      .about-me-flex-container .about-me-image {
+        margin-top: 7%;
+      }
+
+      .container-10022 #timer {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 29%;
+        margin-bottom: -35%;
+        margin-left: -11%;
+        height: 400px;
+      }
+
+      .days,
+      .hours,
+      .minutes,
+      .seconds {
+        display: inline-block;
+        padding: 16px;
+        width: 35px;
+        border-radius: 5px;
+      }
+
+
+      .about-me-container {
+        justify-content: space-between;
+        margin-top: 18%;
+      }
+
+      .about-me-container .about-me-title {
+        margin-top: -22%;
+      }
+
+      .about-me-container {
+        margin-top: 15%;
+      }
+
+
+      .intro .container-10022 {
+
+        margin-top: -48%;
+      }
+
+      .intro h2 {
+        margin-top: 43%;
+      }
+    }
+
+    .mail-button {
+      display: flex;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-out;
+    }
+
+    .mail-button a {
+      display: flex;
+    }
+
+    .mail-button img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      transition: all 0.2s ease-out;
+    }
+
+    .mail-button2 {
+      background-color: #001925;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 10px solid #001925;
+    }
+
+    .mail-button2 img {
+      filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
+    }
+
+    .mail-button2:hover {
+      background-color: blue;
+      border: 10px solid blue;
+    }
+
+    .mail-button2:hover img {
+      filter: unset;
+      transform: scale(1.5);
+    }
+
+    .portfolio-link {
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-link a {
+      text-decoration: none;
+      color: white;
+
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+
+
+    .intro h2 {
+      margin-top: 14%;
+      margin-left: 3%;
+    }
+
+    /* countdonwClock */
+    .container-10022 {
+      position: relative;
+      overflow: hidden;
+      width: 600px;
+      margin-bottom: -20%;
+      margin-top: -17%;
+      margin-left: -11%;
+      height: 400px;
+    }
+
+    .container-10022 h1 {
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      margin-top: 2em;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #F6F4F3;
+    }
+
+    #timer {
+      color: #F6F4F3;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.4em;
+      letter-spacing: 5px;
+      margin-top: 25%;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      display: inline-block;
+      padding: 20px;
+      width: 45px;
+      border-radius: 5px;
+    }
+
+    .days {
+      backdrop-filter: blur(1px);
+      background-color: rgba(255, 255, 255, 0.385);
+    }
+
+    .hours {
+      backdrop-filter: blur(1px);
+      background-color: rgba(255, 255, 255, 0.385);
+    }
+
+    .minutes {
+      backdrop-filter: blur(1px);
+      background-color: rgba(255, 255, 255, 0.385);
+    }
+
+    .seconds {
+      backdrop-filter: blur(1px);
+      background-color: rgba(255, 255, 255, 0.385);
+    }
+
+    .numbers {
+      font-family: 'Montserrat', sans-serif;
+      color: #183059;
+      font-size: 4em;
+    }
+
+    .white {
+      position: absolute;
+      background: #F6F4F3;
+      height: 85px;
+      width: 75px;
+      left: 30%;
+      top: 2%;
+    }
+
+    .white .triangle {
+      border-bottom: 14px solid #F6F4F3;
+    }
+
+    .white .string {
+      background: #F6F4F3;
+      border: 1px solid #F6F4F3;
+    }
+
+    .red {
+      position: absolute;
+      background: #EF2F3C;
+      left: 18%;
+      top: 9%;
+      height: 65px;
+      width: 70px;
+    }
+
+    .red .triangle {
+      border-bottom: 14px solid #EF2F3C;
+    }
+
+    .red .string {
+      background: #EF2F3C;
+      border: 1px solid #EF2F3C;
+    }
+
+    .blue {
+      position: absolute;
+      background: #276FBF;
+      height: 80px;
+      width: 80px;
+      left: 60%;
+      top: 5%;
+    }
+
+    .blue .triangle {
+      border-bottom: 14px solid #276FBF;
+    }
+
+    .blue .string {
+      background: #276FBF;
+      border: 1px solid #276FBF;
+    }
+
+    .balloon {
+      display: none;
+    }
+
+    .eye {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      top: 40%;
+      left: 22%;
+      background: #000;
+      border-radius: 50%;
+    }
+
+    .eye:after {
+      content: '';
+      left: 35px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #000;
+      position: absolute;
+    }
+
+    .mouth {
+      position: absolute;
+      top: 45%;
+      left: 43%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    .happy {
+      border: 2px solid;
+      border-color: transparent #f7f5f5 #000 transparent;
+      transform: rotate(45deg);
+    }
+
+    .triangle {
+      position: absolute;
+      left: 40%;
+      bottom: -10%;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+    }
+
+    .string {
+      position: absolute;
+      height: 70px;
+      width: 1px;
+      left: 48%;
+      top: 100%;
+      z-index: -1;
+    }
+
+    .star {
+      width: 20px;
+      height: 20px;
+      background: #F6F4F3;
+      -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .star-red {
+      width: 30px;
+      height: 30px;
+      margin-left: 51px;
+      margin-top: -5px;
+      background: #EF2F3C;
+      -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
   </style>
 </head>
 
@@ -1141,9 +1261,9 @@ display: none;
           <header class="header">
             <a class="header--logo" href="#0">
               <img src="./assets/img/aclogo-removebg-preview.png" style="height: 50px;" alt="Aero_logo">
-              <p>AEROCLUB NITTE</p> 
+              <p>AEROCLUB NITTE</p>
             </a>
-           
+
             <!-- <div class="button-10a" style="margin-top: 1%; margin-left: 35%;  width: 100%; font-family:  'Kanit', sans-serif;  ">
               <a href="#eventsList">
                 <span></span>
@@ -1152,8 +1272,8 @@ display: none;
                 <span></span>
                REGISTER</a>
             </div> -->
-            
-            <div class="header--nav-toggle" >
+
+            <div class="header--nav-toggle">
               <span></span>
             </div>
           </header>
@@ -1169,54 +1289,55 @@ display: none;
           <ul class="l-main-content main-content">
             <li class="l-section section section--is-active">
               <div class="intro" style="margin-top:-3% ;">
-                
-                <img src="./assets/img/Vayurvya_Logo.png" style="height: 250px; width: 470px; margin-top: 20%;" class="vayu_logo"
+
+                <img src="./assets/img/Vayurvya_Logo.png"
+                  style="height: 250px; width: 470px; margin-top: 20%; margin-bottom: -10%;" class="vayu_logo"
                   alt="Vayurvya_logo">
 
 
-                <div class="intro--banner">
+                <div class="intro--banner"><br><br>
                   <!-- <h1 style="margin-top: -3%;" class="tagline"><span style="font-size:30px;">A Decade Of Legacy</span>
                   </h1> -->
                   <img src="assets/img/3-removebg-preview.png" class="naut" style="height: 460px;" alt="Welcome">
-                  
-                  <br><br><h2 >The event starts in</h2>
+
+                  <h2>The event starts in</h2>
                   <!-- countdownClock -->
-                  <div class="container-10022" >
-                    
+                  <div class="container-10022">
+
                     <div class="balloon white">
                       <div class="star-red"></div>
-                    <div class="face">
-                      <div class="eye"></div>
-                      <div class="mouth happy"></div>
+                      <div class="face">
+                        <div class="eye"></div>
+                        <div class="mouth happy"></div>
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="string"></div>
                     </div>
-                    <div class="triangle"></div>
-                    <div class="string"></div>
-                  </div>
-                  
-                  <div class="balloon red">
-                    <div class="star"></div>
-                    <div class="face">
-                      <div class="eye"></div>
-                      <div class="mouth happy"></div>
+
+                    <div class="balloon red">
+                      <div class="star"></div>
+                      <div class="face">
+                        <div class="eye"></div>
+                        <div class="mouth happy"></div>
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="string"></div>
                     </div>
-                    <div class="triangle"></div>
-                    <div class="string"></div>
-                  </div>
-                  
-                  <div class="balloon blue">
-                    <div class="star"></div>
-                    <div class="face">
-                      <div class="eye"></div>
-                      <div class="mouth happy"></div>
+
+                    <div class="balloon blue">
+                      <div class="star"></div>
+                      <div class="face">
+                        <div class="eye"></div>
+                        <div class="mouth happy"></div>
+                      </div>
+                      <div class="triangle"></div>
+                      <div class="string"></div>
                     </div>
-                    <div class="triangle"></div>
-                    <div class="string"></div>
-                  </div>
                     <div id="timer"></div>
                   </div>
-                  
+
                 </div>
- 
+
                 <div class="button-10a" style="margin-top: 1%; margin-left: 22%;  width: 100%; ">
                   <a href="#eventsList">
                     <span></span>
@@ -1230,7 +1351,7 @@ display: none;
 
 
                 <div class="intro--options">
-                  
+
                   <a href="#0">
                     <!-- <h3>Fantasy interactive</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p> -->
@@ -1249,47 +1370,51 @@ display: none;
                 <div class=".container-1111 ">
                   <div class="about-me-container">
                     <div class="about-me-title" style="font-family: 'Kanit', sans-serif; margin-top: 0%;">
-                      About  Vayurvya
+                      About Vayurvya
                     </div>
-              
+
                     <div class="about-me-flex-container" style="margin-top: 2%;">
                       <div class="about-me-image">
                         <div class="back-div"></div>
                         <div class="black-image"><img src="/assets/img/latestpics001.png" alt="black"></div>
-                        <div class="main-image"><img src="/assets/img/latestpics001.png" style="height: 300px;" alt="smit"></div>
+                        <div class="main-image"><img src="/assets/img/latestpics001.png" style="height: 300px;"
+                            alt="smit"></div>
                       </div>
                       <div class="about-me-content" style="margin-top: -13%;">
-              
-                        <div class="logo" style="margin-bottom: -8%;"><img src="/assets/img/ac_logo-removebg-preview1.png" alt="smit"></div>
-              
-                        <div class="text" >
-                         <div class="firstline"> Welcome to Vayurvya, a celebration of a decade of excellence by Aero Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level competition featuring thrilling RC modeling contests, enlightening talks, engaging paper presentations, and a host of other exciting events. Join us as we soar to new heights and embrace the spirit of innovation in the world of aeronautics. Let's make Vayurvya a testament to our passion for aviation and the remarkable journey of Aero Club Nitte.</div>
-              
-                          <br><br>
-              
-                         <!-- <div class="secondline"> Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. </div>  -->
+
+                        <div class="logo" style="margin-bottom: -8%;"><img
+                            src="/assets/img/ac_logo-removebg-preview1.png" alt="smit"></div>
+
+                        <div class="text">
+                          <div class="firstline"> Welcome to Vayurvya, a celebration of a decade of excellence by Aero
+                            Club Nitte! In honor of our 10th-year anniversary, we proudly present a national-level
+                            competition featuring thrilling RC modeling contests, enlightening talks, engaging paper
+                            presentations, and a host of other exciting events.</div>
+                            
+                            <div class="secondline"> Let's make Vayurvya a
+                            testament to our passion for aviation and the remarkable journey of Aero Club Nitte. </div>
+
+
+                          <!-- <div class="secondline"> Smit is someone who can design and create simple, beautiful and easy to understand things. He is an expert at taking designs into original, exciting and new directions. </div>  -->
                         </div>
                       </div>
                     </div>
-              
+
                     <div class="mail-button mail-button2">
                       <a href="mailto:aeroclubnitte@gmail.com"><img src="./assets/img/gmailLogo.png" alt="mail"></a>
                     </div>
-              
+
                   </div>
-              
+
                 </div>
               </section>
-              
-              
+
+
               <br><br>
-              <!-- <div class = "portfolio-link" style="margin-top: -8%;">
-                <a href="https://www.aeroclubnitte.in/team" target="_blank"> Our Team </a>
-                <a href="https://www.aeroclubnitte.in/contact" target="_blank"> Contact Us </a>
-              </div>  -->
 
 
-            
+
+
             </li>
 
             <!-- ResourcePersons -->
@@ -1390,8 +1515,8 @@ display: none;
                     </div>
                     <div class="card-11">
                       <a href="./vichaar">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg"></a>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg"></a>
                       <div class="card__head-11">Event 4</div>
                     </div>
                     <div class="card-11">
@@ -1424,7 +1549,7 @@ display: none;
                       style="display: flex; flex-direction:column; justify-content: space-around; margin-top: 6%; margin-left: 0%; ">
 
 
-                     
+
                       <div class="container_form_sub" style="  backdrop-filter: blur(1px); 
                       background-color: rgba(255, 255, 255, 0.385); 
                       padding: 5px;
@@ -1510,16 +1635,24 @@ display: none;
                           <img src="./assets/img//391048893-orig-unscreen.gif" style="height: 100px; width: 80%; margin-left: 0%;" alt="">
 
                         </div> -->
-                        <div class="container_form_sub02" style="margin-left:0%; display: flex; flex-direction: row; justify-content: space-evenly; ">
-                          <a href="https://www.instagram.com/aeroclubnitte/"><img src="./assets/img/InstagramLogo.png" style="height: 30px; width: 30px; padding: 30px;" alt="Instagram"></a>
-                          <a href="https://www.linkedin.com/company/aeroclub-nitte/mycompany/"><img src="./assets/img/linkedinLogo.png" style="height: 30px; width: 30px; padding: 30px;" alt="LinkedIN"></a>
-                         <a href="https://www.aeroclubnitte.in"> <img src="./assets/img/world-wide-web.png" style="height: 30px; width: 30px;padding: 30px;" alt="aeroclubnitte.in"></a>
-                          <a href="https://www.mail.google.com/aeroclubnitte@nmamit.in"><img src="./assets/img/gmailLogo.png" style="height: 30px; width: 30px; padding: 30px;" alt="Gmail"></a>
-                          <img src="./assets/img/adressLogo.png" style="height: 30px; width: 30px; padding: 30px;" alt="Gmail">
+                        <div class="container_form_sub02"
+                          style="margin-left:0%; display: flex; flex-direction: row; justify-content: space-evenly; ">
+                          <a href="https://www.instagram.com/aeroclubnitte/"><img src="./assets/img/InstagramLogo.png"
+                              style="height: 30px; width: 30px; padding: 30px;" alt="Instagram"></a>
+                          <a href="https://www.linkedin.com/company/aeroclub-nitte/mycompany/"><img
+                              src="./assets/img/linkedinLogo.png" style="height: 30px; width: 30px; padding: 30px;"
+                              alt="LinkedIN"></a>
+                          <a href="https://www.aeroclubnitte.in"> <img src="./assets/img/world-wide-web.png"
+                              style="height: 30px; width: 30px;padding: 30px;" alt="aeroclubnitte.in"></a>
+                          <a href="https://www.mail.google.com/aeroclubnitte@nmamit.in"><img
+                              src="./assets/img/gmailLogo.png" style="height: 30px; width: 30px; padding: 30px;"
+                              alt="Gmail"></a>
+                          <img src="./assets/img/adressLogo.png" style="height: 30px; width: 30px; padding: 30px;"
+                            alt="Gmail">
 
                         </div>
-                        
-                         
+
+
 
 
 
@@ -1576,7 +1709,7 @@ display: none;
       $(this).toggleClass("active");
     });
   </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
   <script>
@@ -1584,28 +1717,28 @@ display: none;
     imagesLoaded(document.querySelectorAll('.intro_img, .reel_img'), { background: true }, () => document.body.classList.remove('loading'));
   </script>
 
-<script>
-  // Target date (26th January 2024)
-  const targetDate = new Date(new Date().getFullYear() + 1, 0, 26).getTime();
+  <script>
+    // Target date (26th January 2024)
+    const targetDate = new Date(new Date().getFullYear() + 1, 0, 26).getTime();
 
-  // Update the countdown every second
-  let timer = setInterval(function() {
-    // Get today's date and time
-    const now = new Date().getTime();
+    // Update the countdown every second
+    let timer = setInterval(function () {
+      // Get today's date and time
+      const now = new Date().getTime();
 
-    // Calculate the remaining time
-    const remainingTime = targetDate - now;
+      // Calculate the remaining time
+      const remainingTime = targetDate - now;
 
-    if (remainingTime > 0) {
-      // Calculate days, hours, minutes, and seconds
-      const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+      if (remainingTime > 0) {
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-      // Display the countdown
-      document.getElementById("timer").innerHTML =
-        "<div class=\"days\"> \
+        // Display the countdown
+        document.getElementById("timer").innerHTML =
+          "<div class=\"days\"> \
         <div class=\"numbers\">" + days + "</div>days</div> \
         <div class=\"hours\"> \
         <div class=\"numbers\">" + hours + "</div>hours</div> \
@@ -1613,12 +1746,12 @@ display: none;
         <div class=\"numbers\">" + minutes + "</div>minutes</div> \
         <div class=\"seconds\"> \
         <div class=\"numbers\">" + seconds + "</div>seconds</div>";
-    } else {
-      clearInterval(timer);
-      document.getElementById("timer").innerHTML = "Countdown is over!";
-    }
-  }, 1000);
-</script>
+      } else {
+        clearInterval(timer);
+        document.getElementById("timer").innerHTML = "Countdown is over!";
+      }
+    }, 1000);
+  </script>
 
 </body>
 
